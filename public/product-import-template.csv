@@ -1,0 +1,2 @@
+name,category,price,costPrice,stock,sku,strength,dosageForm,packSize,requiresPrescription,description
+Sample product,General,100,60,10,SAMPLE-001,500mg,Tablet,20 tablets,false,Replace this sample with your products
