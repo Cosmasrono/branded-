@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
+import PosProductImage from "@/components/PosProductImage";
 import { getCatalog, getQueuedSales, isNetworkError, queueSale, searchCatalog } from "@/lib/offline";
 
 const fmt = (n) => `KSh ${Number(n || 0).toLocaleString("en-KE", { minimumFractionDigits: 2 })}`;
@@ -125,6 +126,7 @@ export default function PosPage() {
             {msg.text}
           </div>
         )}
+        <p className="text-xs text-slate-500">Sample designs show branding ideas. Check the product name for the selected colour and size.</p>
         <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3">
           {products.map((p) => (
             <button
@@ -133,6 +135,7 @@ export default function PosPage() {
               disabled={p.stock <= 0}
               className="card p-3 text-left hover:border-teal-500 hover:shadow transition disabled:opacity-40"
             >
+              <PosProductImage product={p} />
               <div className="text-sm font-medium leading-tight line-clamp-2">{p.name}</div>
               <div className="text-xs text-slate-400 mt-0.5">{p.sku}</div>
               <div className="mt-2 flex items-center justify-between">
