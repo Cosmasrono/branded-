@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "FrancPharm",
+  title: "Brimrol",
   description: "Point of Sale & Inventory Management",
   manifest: "/manifest.json",
   icons: { icon: "/icon.svg", apple: "/icon.svg" },

@@ -51,7 +51,7 @@ export default function LoginPage() {
         }}
       >
         <div>
-          <div className="text-3xl font-bold tracking-tight">FrancPharm</div>
+          <div className="text-3xl font-bold tracking-tight">Brimrol</div>
           <p className="mt-2 text-teal-100/90 max-w-md">
             An all-in-one POS to run your retail business — sell, track stock,
             get paid and see what’s working.
@@ -71,7 +71,7 @@ export default function LoginPage() {
         </div>
 
         <div className="text-xs text-teal-100/70">
-          © {new Date().getFullYear()} FrancPharm
+          © {new Date().getFullYear()} Brimrol
         </div>
       </div>
 
@@ -79,7 +79,7 @@ export default function LoginPage() {
       <div className="flex items-center justify-center p-6 bg-gradient-to-br from-teal-900 via-slate-900 to-slate-800 lg:bg-slate-50 lg:bg-none">
         <div className="card w-full max-w-md p-8">
           <div className="mb-6 text-center">
-            <div className="text-2xl font-bold text-teal-700">FrancPharm</div>
+            <div className="text-2xl font-bold text-teal-700">Brimrol</div>
             <p className="text-sm text-slate-500 mt-1">Sign in to your account</p>
           </div>
           {error && (

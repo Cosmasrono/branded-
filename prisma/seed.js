@@ -99,7 +99,7 @@ async function main() {
     ["system_active", "1", "Master system on/off switch"],
     ["subscription_active", "1", "Subscription status"],
     ["subscription_expires_at", "", "Subscription expiry date (ISO)"],
-    ["business_name", "FrancPharm", "Business name shown on receipts"],
+    ["business_name", "Brimrol", "Business name shown on receipts"],
     ["tax_rate", "0", "VAT/tax percentage applied at POS"],
   ];
   for (const [key, value, description] of settings) {
